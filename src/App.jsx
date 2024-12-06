@@ -9,7 +9,7 @@ import Card from './components/display/Card';
 import Slideshow from './components/display/Slideshow';
 import TextField from "./components/form/TextField";
 import TextArea from "./components/form/TextArea";
-import LInk from './components/typography/LInk';
+import Link from './components/typography/Link';
 import Paragraph from './components/typography/Paragraph'
 import List from './components/typography/List'
 function App() {

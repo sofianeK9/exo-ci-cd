@@ -1,15 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import propTypes from 'prop-types';
+
 
 const Paragraph =({children, className}) => {
     const baseStyles = 'text-base text-gray-800 leading-relaxed'
-    return <p className={className(baseStyles, className)}>{children}</p>
+
+    return <p className={`${baseStyles}, {className}`}>{children}</p>
 }
 
-Paragraph.PropTypes = {
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string,
+Paragraph.propTypes = {
+    children: propTypes.node.isRequired,
+    className: propTypes.string,
 
 }
 
