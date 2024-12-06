@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import TextField from "./components/form/TextField";
+import TextArea from "./components/form/TextArea";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,6 +34,15 @@ function App() {
         // value={formData.username}
         // onChange={handleChange}
         // error={errors.username}
+      />
+
+      <TextArea
+        label="Description"
+        name="description"
+        // value={formData.description}
+        // onChange={handleChange}
+        // error={errors.description}
+        placeholder="Enter a detailed description..."
       />
 
       <p className="read-the-docs">
