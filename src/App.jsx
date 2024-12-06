@@ -8,6 +8,7 @@ import Menu from './components/display/Menu';
 import Card from './components/display/Card';
 import Slideshow from './components/display/Slideshow';
 import TextField from "./components/form/TextField";
+import TextArea from "./components/form/TextArea";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -74,6 +75,15 @@ function App() {
         // value={formData.username}
         // onChange={handleChange}
         // error={errors.username}
+      />
+
+      <TextArea
+        label="Description"
+        name="description"
+        // value={formData.description}
+        // onChange={handleChange}
+        // error={errors.description}
+        placeholder="Enter a detailed description..."
       />
 
       <p className="read-the-docs">
