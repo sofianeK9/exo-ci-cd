@@ -44,7 +44,7 @@ function App() {
       <Menu
         items={menuItems}
         onItemClick={(item) => alert(`You clicked on ${item.label}`)}
-        className="my-4"
+        className="my-4" 
       />
 
       {/* Composant Card */}
