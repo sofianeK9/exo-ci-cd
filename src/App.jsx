@@ -7,6 +7,7 @@ import './App.css';
 import Menu from './components/display/Menu';
 import Card from './components/display/Card';
 import Slideshow from './components/display/Slideshow';
+import TextField from "./components/form/TextField";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,6 +24,7 @@ function App() {
     'https://via.placeholder.com/600x400?text=Image+2',
     'https://via.placeholder.com/600x400?text=Image+3',
   ];
+
 
   return (
     <>
@@ -65,6 +67,14 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
+
+      <TextField
+        label="Nom"
+        name="nom"
+        // value={formData.username}
+        // onChange={handleChange}
+        // error={errors.username}
+      />
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
