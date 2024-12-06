@@ -9,7 +9,9 @@ import Card from './components/display/Card';
 import Slideshow from './components/display/Slideshow';
 import TextField from "./components/form/TextField";
 import TextArea from "./components/form/TextArea";
-
+import LInk from './components/typography/LInk';
+import Paragraph from './components/typography/Paragraph'
+import List from './components/typography/List'
 function App() {
   const [count, setCount] = useState(0);
 
@@ -89,6 +91,13 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div>
+      <Link href="https://google.com">Google</Link>
+      <List items={['1', '2', '3']} />
+      <Paragraph>
+        j'utilise ce paragraphe
+      </Paragraph>
+    </div>
     </>
   );
 }
