@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import TextField from "./components/form/TextField";
 import TextArea from "./components/form/TextArea";
+import Button from "./components/form/Button";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,6 +45,13 @@ function App() {
         // error={errors.description}
         placeholder="Enter a detailed description..."
       />
+
+      <Button
+        // onClick={handleClick}
+        variant="primary"
+      >
+        Primary Button
+      </Button>
 
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
